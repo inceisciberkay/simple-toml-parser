@@ -1,0 +1,74 @@
+# This is a TOML document
+
+title = "TOML Example" # comment
+
+hex1 = 0xDEADBEEF
+hex2 = 0x123
+oct1 = 0o01234567
+oct2 = 0o755
+
+ldt1 = 1979-05-27T07:32:00
+ldt2 = 1979-05-27T00:32:00.999999
+
+float7 = 6.626e-3
+
+bin1 = 0b11010110
+
+float4 = 5e+22
+float5 = 1e06
+float6 = -2E-2
+
+str1 = "I'm a string."
+str2 = "You can \"quote\" me."
+str3 = "Name\tJos\u00E9\nLoc\tSF."
+
+path = 'C:\Users\nodejs\templates'
+path2 = '\\User\admin$\system32'
+quoted = 'Tom "Dubs" Preston-Werner'
+regex = '<\i\c*\s*>'
+
+re = '''\d{2} apps is t[wo]o many'''
+
+lines = '''
+The first newline is
+trimmed in raw strings.
+All other whitespace
+is preserved.
+'''
+
+# integers
+int1 = +99
+int2 = 42
+int3 = 0
+int4 = -17
+
+[servers]
+
+[servers.alpha]
+ip = "10.0.0.1"
+role = "frontend"
+
+[servers.beta]
+ip = "10.0.0.2"
+role = "backend"
+[owner]
+name = "Tom Preston-Werner"
+
+contributors = [
+
+  "Foo Bar <foo@example.com>",  #aeou
+  { name = "Baz Qux", 
+  email = "bazqux@example.com", 
+  url = "https://example.com/bazqux" }
+]
+
+[database]
+temp_targets = { cpu = 79, case = 72 }
+ports = [ 8000, 8001, 8002 ]
+
+# fractional
+float1 = +1.0
+float2 = 3.1415
+float3 = -0.01
+
+true =  false
